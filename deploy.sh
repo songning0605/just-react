@@ -11,8 +11,11 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:BetaSu/just-react.git master:gh-pages
-git push -f git@gitee.com:kasong/just-react.git master:gh-pages
+# 如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:songning0605/just-react.git master:gh-pages
 
 cd -
 
